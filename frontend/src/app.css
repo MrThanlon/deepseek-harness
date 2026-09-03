@@ -1,0 +1,81 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0b0d10;
+  --panel: #15181c;
+  --border: #29303a;
+  --text: #e6e9ef;
+  --muted: #9aa3af;
+  --accent: #4d8cff;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.frame {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.frame__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+}
+
+.frame__content {
+  padding: 1.5rem;
+}
+
+.frame__footer {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.app-title {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.hello-world {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.hello-world h1 {
+  margin: 0 0 0.5rem;
+}
+
+.hello-world p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.hello-world code {
+  color: var(--accent);
+  background: rgba(77, 140, 255, 0.12);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}

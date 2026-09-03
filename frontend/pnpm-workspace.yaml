@@ -1,0 +1,9 @@
+# This is a self-contained workspace so that the migrated frontend can be
+# developed/built independently of the DeepSeek Harness monorepo that hosts it.
+packages:
+  - '.'
+
+# tsx -> esbuild ships a native binary via a build script; allow it (the parent
+# repo has the same policy). Deny everything else by default.
+allowBuilds:
+  esbuild: true
